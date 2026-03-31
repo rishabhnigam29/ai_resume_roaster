@@ -4,7 +4,7 @@ from pathlib import Path
 import litellm
 from models import ResumeRoast
 
-PROMPT_FILE = Path(__file__).resolve().parent.parent / "system_prompt.txt"
+PROMPT_FILE = Path(__file__).resolve().parent / "system_prompt.txt"
 SYSTEM_PROMPT = PROMPT_FILE.read_text() + "\n\nYou MUST respond with valid JSON matching this schema:\n" + json.dumps(ResumeRoast.model_json_schema(), indent=2)
 
 

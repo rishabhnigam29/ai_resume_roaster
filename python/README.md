@@ -10,7 +10,7 @@ AI-powered resume roaster using LiteLLM + Pydantic.
 ## Setup
 
 ```bash
-cd 01_resume_roaster/python
+cd ai_resume_roaster/python
 
 # Create .env file with your API key
 echo "OPENAI_API_KEY=sk-your-key-here" > .env
